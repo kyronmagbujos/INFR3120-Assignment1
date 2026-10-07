@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyron Magbujos | Portfolio</title>
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1024px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (min-width: 1025px)" href="desktop.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Contact Me</h1>
+            <p>Have a question or a project proposal? Fill out the form below.</p>
+
+            <!-- Contact Form with Validation (Requirement 1d) -->
+            <form action="#" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Cell No. (Format: 123-456-7890):</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+
+                <p>What is 2+2? (So I know you aren't a robot)</p>
+                <input type="number" name="captcha" required><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>Contact: kyron.magbujos@ontariotechu.net</p>
+        <p>&copy; 2026 Kyron Magbujos. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
