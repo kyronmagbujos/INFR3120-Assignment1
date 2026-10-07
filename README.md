@@ -1,62 +1,53 @@
 # INFR3120 – Assignment 1: Personal Portfolio
 **Name:** Kyron Magbujos  
-**Student ID:** [Your Student ID]  
-**Date:** October 6, 2026  
-
-## Project Overview
-This project is a multi-page personal portfolio website built using semantic HTML5 and CSS3. It features a responsive fluid design without the use of Flexbox, as per the course requirements.
-
----
+**Student ID:** 101025835
+**Date:** October 7, 2026  
+**Live Site:** https://kyronmagbujos.github.io/INFR3120-Assignment1/
 
 ## 1. Responsive Design & Viewports
-The website is designed to be fully responsive using **Fluid Design** (percentages) and **Media Queries**. I have used separate CSS files for different devices to ensure modularity.
+This site implements a **Fluid Design** using percentage-based widths and **Media Queries** with separate CSS files for modularity.
 
 | Viewport | Dimension Range | Reason |
 | :--- | :--- | :--- |
-| **Mobile** | `< 600px` | Optimized for portrait orientation on most modern smartphones. |
-| **Tablet** | `601px - 1024px` | Targets iPads and tablets, allowing for a two-column layout where applicable. |
-| **Desktop** | `> 1025px` | Optimized for large laptop and monitor screens using a full-width layout. |
+| **Mobile** | `< 600px` | Single-column layout for portrait smartphones. |
+| **Tablet** | `601px - 1024px` | Adjusted fluid widths for tablets and small laptops. |
+| **Desktop** | `> 1025px` | Full-width optimized layout for desktop monitors. |
 
 ---
 
 ## 2. GUI & Interface Details
-
-### Color Scheme
-- **Scheme Name:** [Insert Name from Adobe Color, e.g., "Deep Sea Tech"]
-- **Source:** [Insert Adobe Color Link]
-- **Explanation:** This scheme was chosen to provide a professional, high-contrast look that improves readability and accessibility.
-
-### Linear Gradients
-- **Location:** [e.g., The Header background and the Submit button on the Contact page.]
-- **Implementation:** Used `linear-gradient` with an angle of [e.g., 135deg] to add depth to the UI.
+- **Color Scheme:** Sourced from Adobe Color. I chose a high-contrast professional palette to ensure readability and accessibility.
+- **Gradients:** A linear gradient (135deg) is applied to the `<header>` to provide a modern aesthetic.
+- **No Flexbox:** As per course requirements, all layouts are achieved using standard block-level elements, percentages, and floats.
 
 ---
 
-## 3. Testing and Validation
-The following tools were used to ensure the site meets industry standards:
-- **W3C HTML Validator:** All pages passed with 0 errors.
-- **W3C CSS Validator:** All stylesheets validated successfully.
-- **W3C Link Checker:** Verified all internal links between the 4 pages.
-- **WAVE Accessibility Tool:** Checked for contrast and ARIA label compliance.
+## 3. Testing and Validation Results
+- **W3C HTML Validator:** 0 errors across all 4 pages.
+- **W3C CSS Validator:** 0 errors for `mobile.css`, `tablet.css`, and `desktop.css`.
+- **W3C Link Checker:** All internal navigation links verified.
+- **WAVE Accessibility:** Checked for ARIA compliance and color contrast.
 
 ---
 
 ## 4. Citations and External Code
-In compliance with the assignment conditions (Condition 1 & 2), I have cited all external influences below. External code accounts for less than 10% of the total project volume.
+In compliance with Condition 1 of the assignment, all external influences are documented here. External code accounts for less than 10% of the total project.
 
 1. **Highlight AI Assistant:** 
-   - Used for initial HTML5 boilerplate structure and semantic tag organization.
-   - Assisted in drafting academic project descriptions based on my course history.
-2. **MDN Web Docs:** 
-   - Referenced for the implementation of the HTML5 `<video>` tag and form validation attributes.
-3. **Course Lectures:** 
-   - Fluid design concepts and media query logic adapted from INFR-3120U Week 2 and 3 lecture materials.
+   - Used for initial HTML5 semantic structure and drafting academic project descriptions.
+   - Date: Oct 7, 2026.
+2. **Adobe Color:**
+   - Sourced hex codes for the site's professional color scheme.
+3. **INFR3120 Course Materials:**
+   - Followed lecture guidelines for fluid design and responsive media queries.
+4. **MDN Web Docs:**
+   - Referenced for HTML5 `<video>` tag attributes and `<form>` validation patterns.
 
 ---
 
 ## 5. Version Control
-This project uses Git for version control. Commits represent major milestones:
-- Initial structure setup
-- Adding content to individual pages
-- Implementing responsive CSS files
-- Final validation and documentation
+Project managed via Git. Commits demonstrate progress through the following stages:
+1. Initial repository setup.
+2. Addition of 4 semantic HTML pages.
+3. Implementation of 3 responsive CSS files (Fluid Design).
+4. Final validation and documentation.

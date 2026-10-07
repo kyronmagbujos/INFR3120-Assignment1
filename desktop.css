@@ -1,48 +1,65 @@
-/* Color Scheme: Professional Slate (Adobe Color inspired) */
+/* 
+   Internal Documentation (Condition 3):
+   Color Palette: A House of Bees 1 (#D9A05B, #A8D0DB, #E1EBF2, #FFFFFF, #4A7C96)
+   Layout: Fluid Design using percentages and floats (No Flexbox as per Requirement 2a)
+*/
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #f0f2f5;
+    background-color: #E1EBF2; /* Off-White from Adobe Palette */
     color: #333;
 }
 
 header {
-    /* Requirement 2b: Linear Gradient */
-    background: linear-gradient(135deg, #2c3e50, #4ca1af);
-    color: white;
-    padding: 20px;
+    /* Requirement 2b: Linear Gradient using Slate Blue and Gold */
+    background: linear-gradient(135deg, #4A7C96 0%, #D9A05B 100%);
+    color: #FFFFFF;
+    padding: 60px 0;
     text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    background-color: #4A7C96;
+    margin: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block; /* Fluid layout without Flexbox */
+    margin: 0 20px;
 }
 
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
+    line-height: 50px;
     font-weight: bold;
+    padding: 10px 15px;
 }
 
-/* Requirement 2a: Fluid Design (Percentages) */
+nav ul li a:hover {
+    background-color: #A8D0DB; /* Light Blue hover */
+    color: #333;
+}
+
+/* Requirement 2a: Fluid Design using Percentages */
 main {
-    width: 80%;
-    margin: 20px auto;
-    background: white;
-    padding: 2%;
-    overflow: hidden; /* Clears floats */
+    width: 80%; /* Fluid width for desktop */
+    margin: 40px auto;
+    background: #FFFFFF;
+    padding: 3%;
+    border-top: 8px solid #D9A05B; /* Gold accent */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden; 
 }
 
 footer {
-    background-color: #2c3e50;
+    background-color: #4A7C96;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
     clear: both;
 }

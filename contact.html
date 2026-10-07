@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyron Magbujos | Portfolio</title>
+    <title>Contact Me | Kyron Magbujos</title>
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1024px)" href="tablet.css">
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="desktop.css">
@@ -24,26 +24,27 @@
     <main>
         <article>
             <h1>Contact Me</h1>
-            <p>Have a question or a project proposal? Fill out the form below.</p>
+            <p>Please fill out the form below to get in touch with me regarding projects or inquiries.</p>
 
-            <!-- Contact Form with Validation (Requirement 1d) -->
+            <!-- Requirement 1d: Contact Form with Validation -->
             <form action="#" method="post">
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="name" name="name" required placeholder="Your Name"><br><br>
 
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+                <input type="email" id="email" name="email" required placeholder="email@example.com"><br><br>
 
-                <label for="phone">Cell No. (Format: 123-456-7890):</label><br>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                <label for="phone">Cell No. (123-456-7890):</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890"><br><br>
 
                 <label for="comments">Comments:</label><br>
-                <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+                <textarea id="comments" name="comments" rows="5" cols="40" required placeholder="Your message..."></textarea><br><br>
 
-                <p>What is 2+2? (So I know you aren't a robot)</p>
+                <!-- Sample Captcha for Human Verification -->
+                <p>What is 2 + 2? (Human Verification)</p>
                 <input type="number" name="captcha" required><br><br>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Submit Message</button>
             </form>
         </article>
     </main>

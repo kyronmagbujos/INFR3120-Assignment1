@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kyron Magbujos | Portfolio</title>
+    <title>About Me | Kyron Magbujos</title>
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1024px)" href="tablet.css">
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="desktop.css">
@@ -24,19 +24,18 @@
     <main>
         <article>
             <h1>About Me</h1>
-            <!-- Placeholder for your photo (Requirement 1b) -->
-            <img src="profile-photo.jpg" alt="Kyron Magbujos" style="width:200px; height:auto;">
-            
-            <p>I am a student at Ontario Tech University currently enrolled in the Web and Scripting Programming course. My academic background includes completed courses in Computer Architecture and Intro to Calculus, which have given me a strong foundation in low-level logic and mathematical optimization.</p>
+            <!-- Requirement 1b: Personal Bitmoji Profile Photo -->
+            <img src="profile.png" alt="Kyron Magbujos Bitmoji" style="width:250px; height:auto; border-radius: 50%;">
+            <p>I am a dedicated student with a passion for understanding the intersection of hardware and software. My journey at Ontario Tech has led me to explore complex subjects like Computer Architecture and Calculus, which have sharpened my analytical and problem-solving abilities.</p>
 
-            <!-- HTML5 Video implementation (Requirement 1b) -->
+            <!-- Requirement 1b: HTML5 Video with poster and controls (45-60s) -->
             <section>
                 <h2>Introductory Video</h2>
-                <video width="320" height="240" controls poster="video-poster.jpg">
+                <video width="400" controls poster="video-poster.jpg">
                     <source src="intro-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+                    <!-- Technical Reference: MDN Fallback for non-supporting browsers -->
+                    Your browser does not support the video tag. Here is a <a href="intro-video.mp4">link to the video</a> instead.
                 </video>
-                <p><em>Note: This is a 45-60 second introduction explaining my background and interests.</em></p>
             </section>
         </article>
     </main>
