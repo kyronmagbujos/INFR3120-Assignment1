@@ -1,65 +1,81 @@
-/* 
-   Internal Documentation (Condition 3):
-   Color Palette: A House of Bees 1 (#D9A05B, #A8D0DB, #E1EBF2, #FFFFFF, #4A7C96)
-   Layout: Fluid Design using percentages and floats (No Flexbox as per Requirement 2a)
+/*
+    Internal Documentation (Adobe Color Reference):
+    Color Palette: A House of Bees 1 (#D6AA58, #A9CDD4, #E1EBF0, #FFFFFF, #477A91)
+    Layout: Float-based Fluid Design
 */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
-    background-color: #E1EBF2; /* Off-White from Adobe Palette */
-    color: #333;
+    padding: 0;
+    background-color: #E1EBF0;
+    font-family: 'Segoe UI', Tahoma, sans-serif
 }
 
 header {
-    /* Requirement 2b: Linear Gradient using Slate Blue and Gold */
-    background: linear-gradient(135deg, #4A7C96 0%, #D9A05B 100%);
+    /* 2b: Linear Gradient (Transition between two colors in a straight direction) */
+    background: linear-gradient(120deg, #477A91 0%, #D6AA58 100%);
     color: #FFFFFF;
-    padding: 60px 0;
+    padding: 55px 0;
     text-align: center;
 }
 
 nav ul {
+    background-color: #477A91;
     list-style: none;
     padding: 0;
-    background-color: #4A7C96;
     margin: 0;
-    text-align: center;
+    text-align: center; 
 }
 
 nav ul li {
-    display: inline-block; /* Fluid layout without Flexbox */
+    display: inline-block; /* 2a: Check if Flexbox was or wasn't used */
     margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     line-height: 50px;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 0 20px;
 }
 
 nav ul li a:hover {
-    background-color: #A8D0DB; /* Light Blue hover */
+    background-color: #A9CDD4;
     color: #333;
 }
 
-/* Requirement 2a: Fluid Design using Percentages */
 main {
-    width: 80%; /* Fluid width for desktop */
-    margin: 40px auto;
+    /* 2a: Fluid Design using Percentages */
+    width: 80%;
+    margin: 25px auto;
     background: #FFFFFF;
-    padding: 3%;
-    border-top: 8px solid #D9A05B; /* Gold accent */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    overflow: hidden; 
+    padding: 4%;
+    border-top: 10px solid #D6AA58;
+    box-shadow: 0 5px 20 px rgba(0,0,0,0.1);
+    overflow: hidden; /* Clears the floats */
 }
 
 footer {
-    background-color: #4A7C96;
+    background-color: #477A91;
     color: white;
     text-align: center;
     padding: 20px 0;
     clear: both;
+}
+
+button {
+    background-color: #D6AA58;
+    color: #FFFFFF;
+    padding: 12px 25px;
+    border: #333;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: backgrouund-color 0.3s;
+}
+
+button:hover {
+    background-color: #477A91
 }

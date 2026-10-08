@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me | Kyron Magbujos</title>
+    <title>Contact Informataion | Kyron Magbujos</title>
+    <!-- Below allows 3 of the separate CSS files to be linked -->
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1024px)" href="tablet.css">
     <link rel="stylesheet" media="screen and (min-width: 1025px)" href="desktop.css">
@@ -18,21 +19,20 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
             </ul>
-        </nav>
     </header>
 
     <main>
-        <article>
+        <article?>
             <h1>Contact Me</h1>
             <p>Please fill out the form below to get in touch with me regarding projects or inquiries.</p>
 
-            <!-- Requirement 1d: Contact Form with Validation -->
+            <!-- 1d: Contact Form with Validation-->
             <form action="#" method="post">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required placeholder="Your Name"><br><br>
 
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required placeholder="email@example.com"><br><br>
+                <input type="text" id="email" name="email" required placeholde="email@example.com"><br><br>
 
                 <label for="phone">Cell No. (123-456-7890):</label><br>
                 <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890"><br><br>
@@ -40,17 +40,18 @@
                 <label for="comments">Comments:</label><br>
                 <textarea id="comments" name="comments" rows="5" cols="40" required placeholder="Your message..."></textarea><br><br>
 
-                <!-- Sample Captcha for Human Verification -->
-                <p>What is 2 + 2? (Human Verification)</p>
+                <!-- Captcha for Human Verification -->
+                <p>What is 2+2? (Human Verification)</p>
                 <input type="number" name="captcha" required><br><br>
 
-                <button type="submit">Submit Message</button>
+                <!-- Submit Button -->
+                <button type="submit">Sumbit</button>
             </form>
         </article>
     </main>
 
-    <footer>
-        <p>Contact: kyron.magbujos@ontariotechu.net</p>
+ <footer>
+        <p>Contact: kyron.magbujos@ontariotech.net</p>
         <p>&copy; 2026 Kyron Magbujos. All rights reserved.</p>
     </footer>
 
