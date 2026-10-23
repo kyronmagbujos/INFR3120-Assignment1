@@ -42,4 +42,4 @@ In compliance with academic integrity guidelines, external code accounts for les
 This project is hosted on GitHub. Commits demonstrate the development process in major stages: initial structure, content population, responsive styling, and final validation.
 
 # Note: Using AI to Generate your Reference
-Using AI is commonly allowed by literature instructors, So doing that for the same for here must imply that I can use AI to generate my reference list.
+Using AI for citations is commonly allowed by literature instructors, So doing that for the same for here must imply that I can use AI to generate my reference list.
